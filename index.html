@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisteria Clothing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/WC.css">
+</head>
+</head>
+
+<body>
+    <!--Inicio navbar-->
+
+    <nav class="navbar navbar-expand-lg fondonavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Staff</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Remeras</a></li>
+                            <li><a class="dropdown-item" href="#">Buzos</a></li>
+                            <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                            <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">xxxxx</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Wisteria Clothing
+                </span>
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/WC logo.png" alt="" width="65" height="65">
+                        </a> 
+                       <!-- Hay que solucionar el color de fondo -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <!--Fin navbar-->
+    <!--Inicio pagina-->
+    <div class="container-fluid seccion-uno">
+        <div class="row">
+            <div class="col-7 sobrenosotros">
+                <h4>Sobre Nosotros</h4>
+                <div class="container-fluid">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tempore quasi reiciendis,
+                        distinctio at dolores repudiandae error a libero et corrupti mollitia velit voluptatum, iure,
+                        fugiat
+                        eos provident labore nulla.
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tempore quasi reiciendis,
+                        distinctio at dolores repudiandae error a libero et corrupti mollitia velit voluptatum, iure,
+                        fugiat
+                        eos provident labore nulla.
+                    </p>
+                </div>
+            </div>
+            <!--staff-->
+            <div class="col-sm-5 staff">
+                <h4>¡Conoce al equipo!</h4>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://fakeimg.pl/600x400/98bfd0/5A9BAD?text=staff" class="d-block w-100"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nombre 1</h5>
+                                <p>Encargade de...</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://fakeimg.pl/600x400/98bfd0/5A9BAD?text=staff" class="d-block w-100"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nombre 2</h5>
+                                <p>Encargade de...</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://fakeimg.pl/600x400/98bfd0/5A9BAD?text=staff" class="d-block w-100"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nombre 3</h5>
+                                <p>Encargade de...</p>
+                            </div>
+                        </div>
+                        <!--Posiblemente habria que aregar mas slides del staff. Las fotos de fondo tienen que ser un layout de la persona y algo estetico relacionaod con la ´marca´-->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!--Fin carrusel-->
+            </div>
+        </div>
+    </div>
+    <!--Division visual de la pag-->
+    <div class="container-fluid separacion">*</div>
+    <!--Catalogo-->
+    <div class="container-fluid">
+        <div class="row seccion-dos">
+            <div class="col-8">
+                <h4 class="productos">Productos</h4>
+                <div class="container-fluid imgcatalogo">
+                    <div>
+                        <a href="..." target="_blank"><img class="imgcatalogo"
+                                src="https://fakeimg.pl/250x250/78acc1/5A9BAD?text=Prod." /></a>
+                    </div>
+                    <div>
+                        <a href="..." target="_blank"><img class="imgcatalogo"
+                                src="https://fakeimg.pl/250x250/78acc1/5A9BAD?text=Prod." /></a>
+                    </div>
+                    <div>
+                        <a href="..." target="_blank"><img class="imgcatalogo"
+                                src="https://fakeimg.pl/250x250/78acc1/5A9BAD?text=Prod." /></a>
+                    </div>
+                    <div>
+                        <a href="..." target="_blank"><img class="imgcatalogo"
+                                src="https://fakeimg.pl/250x250/78acc1/5A9BAD?text=Prod." /></a>
+                    </div>
+                    <div>
+                        <a href="..." target="_blank"><img class="imgcatalogo"
+                                src="https://fakeimg.pl/250x250/78acc1/5A9BAD?text=Prod." /></a>
+                    </div>
+                    <div>
+                        <a href="..." target="_blank"><img class="imgcatalogo"
+                                src="https://fakeimg.pl/250x250/78acc1/5A9BAD?text=Prod." /></a>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto productos">
+                        <button class=" btn productos" type="button">Ver todo</button>
+                      </div>
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+
+            </div>
+        </div>
+    </div>
+    <!--Fin pagina-->
+    <!--Inicio footer-->
+    <footer class="container-fluid footer">
+        <p>Redes sociales....</p>
+    </footer>
+    <!--Fin footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+/*
+font-family: "Nerko One", cursive; sub?
+font-family: "Merriweather", serif; sub?
+font-family: "Montserrat", sans-serif; textos
+font-family: "Cinzel Decorative", serif; nombre pag
+#BCB9D8
+*/
+
+.footer{
+    background-color: #636A99;
+}
+
+.navbar-text{
+    font-family: "Cinzel Decorative", serif;
+    font-size: xx-large;
+    /*color: #DEDEEA; agregar cuando pueda cambiar el fonodo del navbar*/
+}
+
+/*.fondonavbar{
+    background-color: #8488B5;
+}*/
+
+.container-fluid{
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.seccion-uno{
+    background-image: url(../img/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    background-color: #636A99;
+}
+
+.sobrenosotros{
+    background-color: #636a9991;
+    text-align: left justify;
+    padding: 20px;
+}
+
+h4{
+    background-color: #98BFD0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+}
+
+.staff{
+    background-color: #636a9991;
+    text-align: left justify;
+    padding: 20px;
+}
+
+.separacion{
+    background-color: #636A99;
+    color: #636A99;
+}
+
+.seccion-dos{
+    background-color:#BCB9D8 ; 
+}
+
+.col-8{
+    padding: 20px;
+}
+
+.col-sm-4 {
+  /* background-color: #98BFD0;*/
+    text-align: center;
+    font-family: "Merriweather", serif;
+    border-radius: 35px;
+    padding: 20px;
+}
+
+.productos{
+    background-color: #5A9BAD;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    border-radius: 35px;
+
+}
+
+.imgcatalogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+    align-content: stretch;
+    padding: 5px;
+}
