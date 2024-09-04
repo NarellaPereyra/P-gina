@@ -6,23 +6,28 @@ font-family: "Cinzel Decorative", serif; nombre pag
 #BCB9D8
 */
 
-.footer{
-    background-color: #636A99;
+.container-fluid{
+    font-family: "Montserrat", sans-serif; 
 }
 
 .navbar-text{
     font-family: "Cinzel Decorative", serif;
     font-size: xx-large;
-    /*color: #DEDEEA; agregar cuando pueda cambiar el fonodo del navbar*/
+    color: #DEDEEA; 
 }
 
-/*.fondonavbar{
-    background-color: #8488B5;
-}*/
+.dropdown-menu{
+    background-color: #BCB9D8;
+}
 
-.container-fluid{
-    font-family: "Montserrat", sans-serif;
-    
+.navbar{
+    background-color: #636A99;
+}
+
+
+.container{
+padding: 0px;
+background-color: #636A99;
 }
 
 .seccion-uno{
@@ -31,9 +36,6 @@ font-family: "Cinzel Decorative", serif; nombre pag
     background-repeat: no-repeat;
 }
 
-.navbar{
-    background-color: #636A99;
-}
 
 .sobrenosotros{
     background-color: #636a9991;
@@ -89,4 +91,8 @@ h4{
     flex-wrap: wrap;  
     align-content: stretch;
     padding: 5px;
+}
+
+.footer{
+    background-color: #636A99;
 }
