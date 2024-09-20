@@ -1,0 +1,129 @@
+/*
+font-family: "Nerko One", cursive; sub?
+font-family: "Merriweather", serif; sub?
+font-family: "Montserrat", sans-serif; textos
+font-family: "Cinzel Decorative", serif; nombre pag
+#BCB9D8
+*/
+
+.container-fluid {
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar-text {
+    font-family: "Cinzel Decorative", serif;
+    font-size: xx-large;
+    color: #DEDEEA;
+}
+
+.dropdown-menu {
+    background-color: #BCB9D8;
+}
+
+.navbar {
+    background-color: #636A99;
+    font-size: large;
+    padding: 0;
+}
+
+
+.container {
+    padding: 0px;
+    background-color: #636A99;
+}
+
+.seccion-uno {
+    background-image: url(../images/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.sobrenosotros {
+    background-color: #636a9991;
+    text-align: left justify;
+    padding: 20px;
+}
+
+h4 {
+    background-color: #78ACC1;
+    text-align: center;
+    font-family: "Merriweather", serif;
+}
+
+.staff {
+    background-color: #636a9991;
+    text-align: left justify;
+    padding: 20px;
+}
+
+/*.separacion {
+    background-color: #636A99;
+    color: #636A99;
+    <!--División visula pag-->
+    <div class="container-fluid separacion">*</div>
+}*/
+
+
+.seccion-dos {
+    background-color: #8488b5ea;
+    padding: 5px;
+}
+
+.productos {
+    background-color: #5A9BAD;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    border-radius: 35px;
+}
+
+.imgcatalogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
+}
+
+.seccion-tres {
+    background-color: #BCB9D8;
+    padding: 15px;
+
+}
+
+.contactanos {
+    background-color: #98BFD0;
+    border-radius: 15px;
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+
+}
+
+.consultas{
+    background-color: #98BFD0;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+}
+
+.input{
+    background-color: #78ACC1;
+}
+
+.formulario{
+    margin-top: 0;
+}
+
+.ubicacion {
+    background-color: #98BFD0;
+    text-align: justify;
+    font-family: "Merriweather", serif;
+    border: 5px;
+    border-color: #5A9BAD;
+    padding: 10px 25px 10px 25px;
+}
+
+.footer {
+    background-color: #636A99;
+}
