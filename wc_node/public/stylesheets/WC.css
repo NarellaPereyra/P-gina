@@ -10,12 +10,6 @@ font-family: "Cinzel Decorative", serif; nombre pag
     font-family: "Montserrat", sans-serif;
 }
 
-.navbar-text {
-    font-family: "Cinzel Decorative", serif;
-    font-size: xx-large;
-    color: #DEDEEA;
-}
-
 .dropdown-menu {
     background-color: #BCB9D8;
 }
@@ -26,6 +20,15 @@ font-family: "Cinzel Decorative", serif; nombre pag
     padding: 0;
 }
 
+.navbar-text {
+    font-family: "Cinzel Decorative", serif;
+    font-size: xx-large;
+    color: #DEDEEA;
+}
+
+.scroll_section{
+scroll-margin-top: 74px;
+}
 
 .container {
     padding: 0px;
@@ -36,6 +39,7 @@ font-family: "Cinzel Decorative", serif; nombre pag
     background-image: url(../images/Fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 70px;
 }
 
 
