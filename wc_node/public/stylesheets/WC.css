@@ -131,3 +131,53 @@ h4 {
 .footer {
     background-color: #636A99;
 }
+
+/*css/admin/login
+Armar un css para cada pag*/
+.login{
+    background-image: url(../images/Fondo.jpg);
+    background-size: cover;
+   /* background-repeat: no-repeat;*/
+    padding: 10px ;
+    margin: 75px 0 0 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*.iconlogin{
+    display: flex;
+    justify-content: flex-end;
+}*/
+
+.formlogin {
+    background-color: #636a99c0;
+    text-align: left justify;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0px;
+}
+
+.inputlogin{
+    background-color: #8488B5;
+}
+
+.textlogin{
+    background-color:  #8488B5;
+    border-radius: 10px;
+    font-size: medium; 
+    padding: 5px;
+}
+
+.plogin{
+    margin: 0px;
+}
+
+.novedades{
+    background-color: #78ACC1;
+    margin-top: 75px;
+}
+
+.textnovedades{
+    font-family: "Montserrat", sans-serif;
+    padding: 15px;
+    text-align: end;
+}

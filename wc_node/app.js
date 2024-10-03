@@ -6,23 +6,24 @@ var logger = require('morgan');
 
 //form
 require('dotenv').config();
+const session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var loginRouter = require('./routes/admin/login');
+var adminRouter = require('./routes/admin/novedades');
 
 //manejadores y rutas
 var app = express();
-app.get('/productos',function (req,res){
+app.get('/productos', function (req, res) {
   res.send('productos')
-})
-
-app.get('/venta',function (req,res){
+});
+app.get('/venta', function (req, res) {
   res.send('venta')
-})
-
-app.get('/canje',function (req,res){
+});
+app.get('/canje', function (req, res) {
   res.send('canje')
-})
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -34,16 +35,37 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({
+  secret: '15je6PE9MUhI0UTM6m5VpG',
+  resave: false,
+  saveUninitialized: true
+}));
+
+secured = async (req, res, next) => {
+  try {
+    console.log(req.session.id_usuario);
+    if (req.session.id_usuario) {
+      next();
+    } else {
+      res.redirect('/admin/login')
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', secured, adminRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
