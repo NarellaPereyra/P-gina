@@ -1,0 +1,60 @@
+/*
+font-family: "Nerko One", cursive; sub?
+font-family: "Merriweather", serif; sub?
+font-family: "Montserrat", sans-serif; textos
+font-family: "Cinzel Decorative", serif; nombre pag
+#BCB9D8
+*/
+
+.container-fluid {
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+    background-color: #636A99;
+    font-size: large;
+    padding: 0;
+}
+
+.navbar-text {
+    font-family: "Cinzel Decorative", serif;
+    font-size: xx-large;
+    color: #DEDEEA;
+}
+
+/* .scroll_section{
+scroll-margin-top: 74px;
+} */
+
+.container {
+    padding: 0px;
+    background-color: #636A99;
+}
+
+.intronov {
+    background-color: #98BFD0;
+    margin-top: 75px;
+}
+
+.textnovedades {
+    font-family: "Montserrat", sans-serif;
+    padding: 15px;
+    text-align: end;
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+    /* margin-left: 25px; */
+}
+
+.novedades {
+    background-color: #98BFD0;
+}
+
+.bs-table-bg{
+    background-color: #636A99;
+}
+
+.footer {
+    background-color: #636A99;
+}

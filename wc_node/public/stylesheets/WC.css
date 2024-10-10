@@ -10,10 +10,6 @@ font-family: "Cinzel Decorative", serif; nombre pag
     font-family: "Montserrat", sans-serif;
 }
 
-.dropdown-menu {
-    background-color: #BCB9D8;
-}
-
 .navbar {
     background-color: #636A99;
     font-size: large;
@@ -55,12 +51,6 @@ h4 {
     font-family: "Merriweather", serif;
 }
 
-.staff {
-    background-color: #636a9991;
-    text-align: left justify;
-    padding: 20px;
-}
-
 /*.separacion {
     background-color: #636A99;
     color: #636A99;
@@ -97,17 +87,65 @@ h4 {
 
 }
 
+.novedades {
+    background-color: #636a9991;
+    text-align: left justify;
+    padding: 20px;
+}
+
 .contactanos {
     background-color: #98BFD0;
-    border-radius: 15px;
     padding: 10px 50px 10px 50px;
     text-align: center;
+}
 
+/* .novedades{
+    background-color: #98BFD0;
+    text-align: center;
+} */
+
+.linovedades{
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+
+.linovedades li{
+ margin: 5px 0;   
+}
+
+.linovedades li a{
+    background-color: #98BFD0;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: large;
+    color:black;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.linovedades li a:hover{
+    color: #DEDEEA;
+    background-color: #78ACC1;
+}
+
+.linovedades li a img{
+    width: 110px;
+    height: 50px;
+    filter: blur();
+    transition: all .2s ease-in-out;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+.linovedades li a:hover img{
+    filter: none;
+    margin-right: 1.6rem;
+    opacity: 1;
 }
 
 .consultas{
     background-color: #98BFD0;
-    border-radius: 15px;
     padding: 10px 20px 10px 20px;
 }
 
@@ -134,6 +172,7 @@ h4 {
 
 /*css/admin/login
 Armar un css para cada pag*/
+
 .login{
     background-image: url(../images/Fondo.jpg);
     background-size: cover;
@@ -169,15 +208,4 @@ Armar un css para cada pag*/
 
 .plogin{
     margin: 0px;
-}
-
-.novedades{
-    background-color: #78ACC1;
-    margin-top: 75px;
-}
-
-.textnovedades{
-    font-family: "Montserrat", sans-serif;
-    padding: 15px;
-    text-align: end;
 }

@@ -12,58 +12,45 @@
                     distinctio at dolores repudiandae error a libero et corrupti mollitia velit voluptatum, iure,
                     fugiat
                     eos provident labore nulla.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tempore quasi reiciendis,
+                    distinctio at dolores repudiandae error a libero et corrupti mollitia velit voluptatum, iure,
+                    fugiat
+                    eos provident labore nulla.
                 </p>
             </div>
         </div>
-        <!--staff-->
-        <div id="staff" class="col-sm-5 staff scroll_section">
-            <h4>¡Conoce al equipo!</h4>
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://fakeimg.pl/600x400/98bfd0/5A9BAD?text=staff" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Nombre 1</h5>
-                            <p>Encargade de...</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://fakeimg.pl/600x400/98bfd0/5A9BAD?text=staff" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Nombre 2</h5>
-                            <p>Encargade de...</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://fakeimg.pl/600x400/98bfd0/5A9BAD?text=staff" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Nombre 3</h5>
-                            <p>Encargade de...</p>
-                        </div>
-                    </div>
-                    <!--Posiblemente habria que aregar mas slides del staff. Las fotos de fondo tienen que ser un layout de la persona y algo estetico relacionaod con la ´marca´-->
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <div id="novedades" class="col-sm-5 novedades scroll_section">
+            <h4>Novedades</h4>
+            <div>
+                <ul class="linovedades">
+                    {{#each novedades}}
+                    <li>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop{{id}}"><img
+                                src="/images/img_novedades_fondo.jpg"> {{titulo}} </a>
+                    </li>
+                    {{/each}}
+                </ul>
             </div>
-            <!--Fin carrusel-->
         </div>
+        <!-- Modal-->
+        {{#each novedades}}
+        <div class="modal fade" id="staticBackdrop{{id}}" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background-color: #78ACC1;">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="staticBackdropLabel"> {{titulo}} </h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="background-color: #98BFD0;">
+                        <h5> {{subtitulo}} </h5>
+                        <p> {{cuerpo}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
     </div>
 </div>
 
@@ -116,92 +103,121 @@
 <!--Sección 3-->
 <div class="container-fluid">
     <div id="secciontres" class="row seccion-tres scroll_section">
-        <div id="secciontres" class="col-sm-5">
-            <h4 style="border-radius: 15px;">¿Quéres vender?</h4>
-            <div class="contactanos">
-                Compramos prendas usadas de primera calidad a particulares.
-                <br>
-                Los pagos se hacen en efectivo y exclusivamente en persona.
-                <div>
-                    <a href="/venta" target="_blank" type="button" class="btn btn-outline-dark">Vender</a>
-                </div>
-            </div>
-            <br>
-            <h4 style="border-radius: 15px;">¿Quéres canjear?</h4>
-            <div class="contactanos">
-                Creemos necesario aportar a la sustentabilidad de nuestro planeta, por eso cada prenda que puede
-                seguir puede ser disfrutada por otra persona.
-                <br>
-                Para eso recibimos indumentaria que puede ser
-                cambiada por otras de nuestra tienda.
-                <div>
-                    <a href="/canje" target="_blank" type="button" class="btn btn-outline-dark">Canjear</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-7">
-            <div class="container-fluid">
-                <h4 style="border-radius: 15px;">Consultas</h4>
-                <div id="secciontres" class="row seccion-tres scroll_section" style="padding-top: 0;">
-                    <div class="consultas">
-                        <div>
-                            <h7>¿Te quedó alguna duda? ¡No te preocupes!
-                                En este formulario nos podes dejar tus datos y la
-                                consulta que tengas para que así algun miembro del equipo te la resuelva lo más rápido
-                                posible.
-                            </h7>
+            <div class="col-sm-5 staff" style="margin-top: 40px;">
+                <h4>¡Conoce al equipo!</h4>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://fakeimg.pl/600x400/98bfd0/5A9BAD?text=staff" class="d-block w-100"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nombre 1</h5>
+                                <p>Encargade de...</p>
+                            </div>
                         </div>
-                        <form class="row g-3" action="/" method="post">
-                            <div class="col-md-6 ">
-                                <label for="nombre" class="form-label"></label>
-                                <input type="text" class="form-control input" id="nombre" name="nombre"
-                                    placeholder="Ingresa tu nombre">
+                        <div class="carousel-item">
+                            <img src="https://fakeimg.pl/600x400/98bfd0/5A9BAD?text=staff" class="d-block w-100"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nombre 2</h5>
+                                <p>Encargade de...</p>
                             </div>
-                            <div class="col-md-6 ">
-                                <label for="telefono" class="form-label"></label>
-                                <input type="text" class="form-control input" id="telefono" name="telefono"
-                                    placeholder="Ingresa tu telefono">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://fakeimg.pl/600x400/98bfd0/5A9BAD?text=staff" class="d-block w-100"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nombre 3</h5>
+                                <p>Encargade de...</p>
                             </div>
-                            <div class="mb-3 formulario">
-                                <label for="email" class="form-label"></label>
-                                <input type="email" class="form-control input" id="email" name="email"
-                                    placeholder="Ingresa tu correo: ejemplo@email.com">
+                        </div>
+                        <!--Posiblemente habria que aregar mas slides del staff. Las fotos de fondo tienen que ser un layout de la persona y algo estetico relacionaod con la ´marca´-->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!--Fin carrusel-->
+            </div>
+            <div class="col-7">
+                <div class="container-fluid">
+                    <h4>Consultas</h4>
+                    <div id="secciontres" class="row seccion-tres scroll_section" style="padding-top: 0;">
+                        <div class="consultas">
+                            <div>
+                                <h7>¿Te quedó alguna duda? ¡No te preocupes!
+                                    <br>
+                                    Dejanos tus datos y la consulta en este formulario para que así algun miembro del
+                                    equipo
+                                    te la resuelva lo más rápido
+                                    posible.
+                                </h7>
                             </div>
-                            <div class="mb-3 formulario">
-                                <label for="mensaje" class="form-label"></label>
-                                <textarea class="form-control input" id="mensaje" name="mensaje" rows="4"
-                                    placeholder="Deja tu consulta"></textarea>
-                            </div>
-                            <div class="g-3 formulario">
-                                <button type="enviar" class="btn btn-outline-dark">Enviar</button>
-  {{message}}
-                            </div>
-                        </form>
+                            <form class="row g-3" action="/" method="post">
+                                <div class="col-md-6 ">
+                                    <label for="nombre" class="form-label"></label>
+                                    <input type="text" class="form-control input" id="nombre" name="nombre"
+                                        placeholder="Ingresa tu nombre">
+                                </div>
+                                <div class="col-md-6 ">
+                                    <label for="telefono" class="form-label"></label>
+                                    <input type="text" class="form-control input" id="telefono" name="telefono"
+                                        placeholder="Ingresa tu telefono">
+                                </div>
+                                <div class="mb-3 formulario">
+                                    <label for="email" class="form-label"></label>
+                                    <input type="email" class="form-control input" id="email" name="email"
+                                        placeholder="Ingresa tu correo: ejemplo@email.com">
+                                </div>
+                                <div class="mb-3 formulario">
+                                    <label for="mensaje" class="form-label"></label>
+                                    <textarea class="form-control input" id="mensaje" name="mensaje" rows="4"
+                                        placeholder="Deja tu consulta"></textarea>
+                                </div>
+                                <div class="g-3 formulario">
+                                    <button type="enviar" class="btn btn-outline-dark">Enviar</button>
+                                    {{message}}
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row ">
+                    <h4 style="margin-top: 15px;">¡Vení a visitarnos!</h4>
+                    <div id="visitanos" class="ubicacion col-sm-5 scroll_section">
+                        ¿No te gusta comprar de forma online? ¡No te preocupes!
+                        <br>
+                        En Wisteria Clothing contamos con un
+                        espacio físico que montamos cada 15 días en donde vas a
+                        poder ver los productos que tengamos en el momento.
+                        <br>
+                        ¡Revisa las novedades o seguinos en nuestras redes para enterarte las fechas!
+                    </div>
+                    <div class="ubicacion col-7 container-fluid">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52439.432495964276!2d-58.67239177101524!3d-34.76907924271356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc380d7e97857%3A0xa31b722a18c657e9!2sPlaza%20Cat%C3%A1n!5e0!3m2!1ses!2sar!4v1726000188154!5m2!1ses!2sar"
+                            width="675" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row ">
-                <h4 style="margin-top: 15px;">¡Vení a visitarnos!</h4>
-                <div id="visitanos" class="ubicacion col-sm-5 scroll_section">
-                    ¿No te gusta comprar de forma online? ¡No te preocupes!
-                    <br>
-                    En Wisteria Clothing contamos con un
-                    espacio físico que montamos cada 15 días en donde vas a
-                    poder ver los productos que tengamos en el momento.
-                    <br>
-                    ¡Seguinos en nuestras redes para enterarte las fechas!
-                </div>
-                <div class="ubicacion col-7">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52439.432495964276!2d-58.67239177101524!3d-34.76907924271356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc380d7e97857%3A0xa31b722a18c657e9!2sPlaza%20Cat%C3%A1n!5e0!3m2!1ses!2sar!4v1726000188154!5m2!1ses!2sar"
-                        width="675" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
     </div>
-</div>
