@@ -51,8 +51,28 @@ h2 {
     background-color: #98BFD0;
 }
 
-.bs-table-bg{
-    background-color: #636A99;
+h4{
+    background-color: #8488B5;
+    text-align: start;
+    font-family: "Merriweather", serif;
+   padding: 6px;
+   margin-bottom: 15px;
+}
+
+.agregar{
+    background-image: url(../images/fondo_agregar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 74px;
+}
+
+.formagregar{
+    background-color: #BCB9D8;
+    padding: 10px;
+}
+
+.forminput{
+    background-color: #8488b596;
 }
 
 .footer {
