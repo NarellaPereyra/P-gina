@@ -8,22 +8,12 @@ var logger = require('morgan');
 require('dotenv').config();
 const session = require('express-session');
 
+var app = express();
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
-
-//manejadores y rutas
-var app = express();
-app.get('/productos', function (req, res) {
-  res.send('productos')
-});
-app.get('/venta', function (req, res) {
-  res.send('venta')
-});
-app.get('/canje', function (req, res) {
-  res.send('canje')
-});
+var productosRouter = require('./routes/productos');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -58,6 +48,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', secured, adminRouter);
+app.use('/productos', productosRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
