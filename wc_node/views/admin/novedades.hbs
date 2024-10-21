@@ -18,11 +18,22 @@
 <body>
     <div class="container-fluid">
         <div class="row intronov">
-            <div class="col">
+            <div class="navbar col-sm-7" style="background-color: #98BFD0; margin-top: 10px;">
+                <form class="d-flex" action="/admin/novedades" method="get" style=" margin-left: 10px;">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" name="q"
+                        {{#if q}} value="{{q}}" {{/if}}>
+                    <button class="btn btn-dark" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="col-sm-5 d-flex align-items-center justify-content-end">
                 <p class="textnovedades">
                     <span>Hola {{persona}}! </span>
-                    <a href="/admin/login/logout" type="button" class="btn btn-outline-dark">Cerrar sesión<i
-                            class="fa-solid fa-right-from-bracket"></i></a>
+                    <a href="/admin/login/logout" type="button" class="btn btn-outline-dark">
+                        Cerrar sesión
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </a>
                 </p>
             </div>
         </div>
@@ -41,7 +52,7 @@
     </div>
 
     <div class="container-fluid novedades">
-        <table class="table bs-table-bg" style="margin-bottom: 0px;">
+        <table class="table bs-table-bg " style="margin: 0;">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -55,12 +66,19 @@
                     <th scope="row">{{id}}</th>
                     <td>{{titulo}}</td>
                     <td class="text-end">
-                        <a href="/admin/novedades/modificar/{{id}}" class="btn btn-dark"><i class="fa-solid fa-pencil"></i></a>
-                        <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-dark"><i class="fa-solid fa-trash-can"></i></a>
+                        <a href="/admin/novedades/modificar/{{id}}" class="btn btn-dark"><i
+                                class="fa-solid fa-pencil"></i></a>
+                        <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-dark"><i
+                                class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
                 {{/each}}
             </tbody>
         </table>
+        {{#if is_search}}
+        {{#unless novedades.length}}
+       No se encontraron resultados para "<b>{{q}}</b>" 
+        {{/unless}}
+        {{/if}}
     </div>
 </body>

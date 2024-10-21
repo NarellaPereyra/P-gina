@@ -53,7 +53,6 @@
         {{/each}}
     </div>
 </div>
-
 <!--Catalogo-->
 <div class="container-fluid">
     <div id="productos" class="row seccion-dos scroll_section">
@@ -61,50 +60,42 @@
         <div class="container-fluid">
             <div class="imgcatalogo">
                 <div>
-                    <a href="..." target="_blank"><img class="imgcatalogo"
-                            src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
+                    <img class="imgcatalogo" src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." />
                 </div>
                 <div>
-                    {{!-- <a href="..." target="_blank">--}}<img class="imgcatalogo"
-                            src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
+                    <img class="imgcatalogo" src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
                 </div>
                 <div>
-                    {{!-- <a href="..." target="_blank">--}}<img class="imgcatalogo"
-                            src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
+                    <img class="imgcatalogo" src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
                 </div>
                 <div>
-                    {{!-- <a href="..." target="_blank">--}}<img class="imgcatalogo"
-                            src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
+                    <img class="imgcatalogo" src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
                 </div>
                 <div>
-                    {{!-- <a href="..." target="_blank"> --}}<img class="imgcatalogo"
-                            src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
+                    <img class="imgcatalogo" src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
                 </div>
                 <div>
-                    {{!-- <a href="..." target="_blank"> --}}<img class="imgcatalogo"
-                            src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
+                    <img class="imgcatalogo" src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
                 </div>
                 <div>
-                    {{!-- <a href="..." target="_blank"> --}}<img class="imgcatalogo"
-                            src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
+                    <img class="imgcatalogo" src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
                 </div>
                 <div>
-                    {{!-- <a href="..." target="_blank"> --}}<img class="imgcatalogo"
-                            src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
+                    <img class="imgcatalogo" src="https://fakeimg.pl/250x300/78acc1/5A9BAD?text=Prod." /></a>
                 </div>
                 <div class="d-grid gap-2 col-6 mx-auto productos">
-                    <a href="./productos.hbs" target="_blank" class=" btn productos" type="button">Ver todo</a>
+                    <a href="/productos" target="_blank" class=" btn productos" type="button">Ver todo</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <!--Sección 3-->
 <div class="container-fluid">
     <div id="secciontres" class="row seccion-tres scroll_section">
-            <div class="col-sm-5 staff" style="margin-top: 40px;">
-                <h4>¡Conoce al equipo!</h4>
+        <div class="col-sm-5 staff" style="margin-top: 35px;">
+            <h4>¡Conoce al equipo!</h4>
+            <div>
                 <div id="carouselExampleCaptions" class="carousel slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -139,7 +130,6 @@
                                 <p>Encargade de...</p>
                             </div>
                         </div>
-                        <!--Posiblemente habria que aregar mas slides del staff. Las fotos de fondo tienen que ser un layout de la persona y algo estetico relacionaod con la ´marca´-->
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                         data-bs-slide="prev">
@@ -152,72 +142,72 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <!--Fin carrusel-->
             </div>
-            <div class="col-7">
-                <div class="container-fluid">
-                    <h4>Consultas</h4>
-                    <div id="secciontres" class="row seccion-tres scroll_section" style="padding-top: 0;">
-                        <div class="consultas">
-                            <div>
-                                <h7>¿Te quedó alguna duda? ¡No te preocupes!
-                                    <br>
-                                    Dejanos tus datos y la consulta en este formulario para que así algun miembro del
-                                    equipo
-                                    te la resuelva lo más rápido
-                                    posible.
-                                </h7>
-                            </div>
-                            <form class="row g-3" action="/" method="post">
-                                <div class="col-md-6 ">
-                                    <label for="nombre" class="form-label"></label>
-                                    <input type="text" class="form-control input" id="nombre" name="nombre"
-                                        placeholder="Ingresa tu nombre">
-                                </div>
-                                <div class="col-md-6 ">
-                                    <label for="telefono" class="form-label"></label>
-                                    <input type="text" class="form-control input" id="telefono" name="telefono"
-                                        placeholder="Ingresa tu telefono">
-                                </div>
-                                <div class="mb-3 formulario">
-                                    <label for="email" class="form-label"></label>
-                                    <input type="email" class="form-control input" id="email" name="email"
-                                        placeholder="Ingresa tu correo: ejemplo@email.com">
-                                </div>
-                                <div class="mb-3 formulario">
-                                    <label for="mensaje" class="form-label"></label>
-                                    <textarea class="form-control input" id="mensaje" name="mensaje" rows="4"
-                                        placeholder="Deja tu consulta"></textarea>
-                                </div>
-                                <div class="g-3 formulario">
-                                    <button type="enviar" class="btn btn-outline-dark">Enviar</button>
-                                    {{message}}
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="col-7" >
             <div class="container-fluid">
-                <div class="row ">
-                    <h4 style="margin-top: 15px;">¡Vení a visitarnos!</h4>
-                    <div id="visitanos" class="ubicacion col-sm-5 scroll_section">
-                        ¿No te gusta comprar de forma online? ¡No te preocupes!
-                        <br>
-                        En Wisteria Clothing contamos con un
-                        espacio físico que montamos cada 15 días en donde vas a
-                        poder ver los productos que tengamos en el momento.
-                        <br>
-                        ¡Revisa las novedades o seguinos en nuestras redes para enterarte las fechas!
-                    </div>
-                    <div class="ubicacion col-7 container-fluid">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52439.432495964276!2d-58.67239177101524!3d-34.76907924271356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc380d7e97857%3A0xa31b722a18c657e9!2sPlaza%20Cat%C3%A1n!5e0!3m2!1ses!2sar!4v1726000188154!5m2!1ses!2sar"
-                            width="675" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                <h4>Consultas</h4>
+                <div id="secciontres" class="row seccion-tres scroll_section" style="padding-top: 0;">
+                    <div class="consultas">
+                        <div>
+                            <h7>¿Te quedó alguna duda? ¡No te preocupes!
+                                Completá este formulario para que algún miembro del
+                                equipo te la resuelva lo más rápido posible.
+                            </h7>
+                        </div>
+                        <form class="row g-3" action="/" method="post">
+                            <div class="col-md-6 ">
+                                <label for="nombre" class="form-label"></label>
+                                <input type="text" class="form-control input" id="nombre" name="nombre"
+                                    placeholder="Ingresa tu nombre">
+                            </div>
+                            <div class="col-md-6 ">
+                                <label for="telefono" class="form-label"></label>
+                                <input type="text" class="form-control input" id="telefono" name="telefono"
+                                    placeholder="Ingresa tu telefono">
+                            </div>
+                            <div class="mb-3 formulario">
+                                <label for="email" class="form-label"></label>
+                                <input type="email" class="form-control input" id="email" name="email"
+                                    placeholder="Ingresa tu correo: ejemplo@email.com">
+                            </div>
+                            <div class="mb-3 formulario">
+                                <label for="mensaje" class="form-label"></label>
+                                <textarea class="form-control input" id="mensaje" name="mensaje" rows="4"
+                                    placeholder="Deja tu consulta"></textarea>
+                            </div>
+                            <div class="g-3 formulario">
+                                <button type="enviar" class="btn btn-outline-dark">Enviar</button>
+                                {{message}}
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container-fluid">
+            <div class="row ">
+                <h4 style="margin-top: 15px;">¡Vení a visitarnos!</h4>
+                <div id="visitanos" class="ubicacion col-sm-5 scroll_section">
+                    ¿No te gusta comprar de forma online? ¡No te preocupes!
+                    <br>
+                    En Wisteria Clothing contamos con un
+                    espacio físico que montamos cada 15 días en donde vas a
+                    poder ver los productos que tengamos en el momento.
+                    <br>
+                    ¡Revisa las novedades o seguinos en nuestras redes para enterarte las fechas!
+                    <br>
+                    <br>
+                    <b><i class="fa-solid fa-location-dot fa-xl"></i> Av. José Equiza 4102-4200, B1759LTP González Catán, Provincia de Buenos Aires</b>
+                </div>
+                <div class="ubicacion col-7 container-fluid">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52439.432495964276!2d-58.67239177101524!3d-34.76907924271356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc380d7e97857%3A0xa31b722a18c657e9!2sPlaza%20Cat%C3%A1n!5e0!3m2!1ses!2sar!4v1726000188154!5m2!1ses!2sar"
+                        width="675" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
